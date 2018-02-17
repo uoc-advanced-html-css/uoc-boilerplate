@@ -21,13 +21,13 @@ Only edit files located in the `src/` folder.
 
 ### Build commands
 
-To launch a local development server and live monitor changes, run this command on the project folder:
-
-* `npm run start`
-
 To build compiled assets, run one of these commands on the project folder:
 
 * `npm run build` - Compile the files on the assets folder, inject `<style>` and `<script>` tags on the .html files.
 * `npm run build:production` - The same as the command above but also optimize assets.
+
+To launch a local development server and live monitor changes, run this command on the project folder (a build is required first):
+
+* `npm run start`
 
 The compiled assets will be saved to the `dist/` folder.

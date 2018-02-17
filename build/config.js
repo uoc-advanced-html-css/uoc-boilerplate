@@ -8,7 +8,7 @@ const rootPath = process.cwd();
 
 const config = {
   open: true,
-  copy: '+(images|fonts)/**/*',
+  copy: 'images/**/*',
   entry: {
     "main": [
       "./scripts/main.js",
