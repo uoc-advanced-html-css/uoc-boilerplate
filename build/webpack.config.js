@@ -110,6 +110,8 @@ let webpackConfig = {
         loader: 'url',
         options: {
           limit: 4096,
+          publicPath: config.env.production ? '../../assets/' : 'assets/',
+          outputPath: '',
           name: `[path]${assetsFilenames}.[ext]`,
         },
       },
@@ -119,6 +121,7 @@ let webpackConfig = {
         loader: 'url',
         options: {
           limit: 4096,
+          publicPath: config.env.production ? '../../assets/vendor/' : 'assets/vendor/',
           outputPath: 'vendor/',
           name: `[path]${assetsFilenames}.[ext]`,
         },
