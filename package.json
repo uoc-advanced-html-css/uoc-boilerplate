@@ -1,6 +1,6 @@
 {
   "name": "uoc-boilerplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
     "build": "webpack --progress --config build/webpack.config.js",
