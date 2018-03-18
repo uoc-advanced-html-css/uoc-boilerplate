@@ -110,7 +110,7 @@ let webpackConfig = {
         loader: 'url',
         options: {
           limit: 4096,
-          publicPath: config.env.production ? '../../assets/' : 'assets/',
+          publicPath: config.enabled.watcher ? 'assets/' : '../',
           outputPath: '',
           name: `[path]${assetsFilenames}.[ext]`,
         },
@@ -121,8 +121,9 @@ let webpackConfig = {
         loader: 'url',
         options: {
           limit: 4096,
-          publicPath: config.env.production ? '../../assets/vendor/' : 'assets/vendor/',
+          publicPath: config.enabled.watcher ? 'assets/' : '../',
           outputPath: 'vendor/',
+          context: path.join( config.paths.root, 'node_modules' ),
           name: `[path]${assetsFilenames}.[ext]`,
         },
       },
