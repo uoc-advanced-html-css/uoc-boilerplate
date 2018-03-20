@@ -6,7 +6,7 @@ const config = require('./config');
 module.exports = {
   output: {
     pathinfo: true,
-    publicPath: 'http://localhost:' + config.browserSync.port + '/' + config.publicPath,
+    publicPath: '/' + config.publicPath,
   },
   devtool: '#cheap-module-source-map',
   stats: false,
