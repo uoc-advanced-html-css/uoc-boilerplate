@@ -6,14 +6,20 @@
 
 /**
  * Import npm dependencies
- *
- * Prefix your imports with `~` to grab from node_modules/
- * @see https://github.com/webpack-contrib/sass-loader#imports
+ * see: https://en.parceljs.org/module_resolution.html
+ * see commented examples below
  */
-// @import "~some-node-module";
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
 
 /**
- * Import your styles
+ * Import layouts
+ * It's a best practice to use a partial for each page
  */
 
 @import "layouts/home";
+
+/**
+ * Do NOT include anything else in this file!
+ */

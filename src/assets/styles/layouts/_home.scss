@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 30px;
   font-family: $font-family-sans-serif;
-  background-color: lighten( $uoc-masterbrand, 25% );
+  background-color: lighten($uoc-masterbrand, 25%);
   color: $uoc-corporate;
 }
 
@@ -17,4 +17,5 @@ body {
   font-family: $font-family-serif;
   font-size: 36px;
   font-weight: 700;
+  color: $uoc-corporate;
 }
