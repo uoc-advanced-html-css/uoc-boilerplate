@@ -1,6 +1,6 @@
 # UOC Boilerplate
 
-UOC Boilerplate is a starter template for the Advanced HTML and CSS Tools course from the [Master's Program in Multimedia Applications](https://estudis.uoc.edu/ca/masters-universitaris/aplicacions-multimedia/presentacio) and the [Master's Program in Web App and Website Development](https://estudis.uoc.edu/ca/masters-universitaris/desenvolupament-llocs-aplicacions-web/presentacio) at the [Universitat Oberta de Catalunya](https://www.uoc.edu). It aims to provide a basic, modern frontend web development starter pack based on Parcel and including a Sass compiler, an ES6 transpiler, minifiers, and development tools.
+UOC Boilerplate is a starter template for the Advanced HTML and CSS Tools course from the [Master's Program in Multimedia Applications](https://estudis.uoc.edu/ca/masters-universitaris/aplicacions-multimedia/presentacio) and the [Master's Program in Web App and Website Development](https://estudis.uoc.edu/ca/masters-universitaris/desenvolupament-llocs-aplicacions-web/presentacio) at the [Universitat Oberta de Catalunya](https://www.uoc.edu). It aims to provide a basic, modern frontend web development starter pack based on Parcel and including a Sass compiler, an ES6 transpiler, minifiers, an image optimizer, and development tools.
 
 This is the 2.0 version of UOC Boilerplate, available since the UOC 2018-2 semester.
 
@@ -33,6 +33,10 @@ Using the Terminal, navigate to the project folder and run `npm install`.
 ### Scripts
 
 * Allow for modern JavaScript (ES201x/ES8/ES7/ES6…) which is automatically transpiled to ES5 and minifed in production builds, with [Babel](https://babeljs.io/).
+
+### Images
+
+* Image optimization with [`parcel-plugin-imagemin`](https://github.com/DeMoorJasper/parcel-plugin-imagemin), based on [`imagemin`](https://github.com/imagemin/imagemin), on production builds.
 
 ### Development
 
