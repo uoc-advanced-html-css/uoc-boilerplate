@@ -4,11 +4,12 @@
   "private": true,
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
-    "parcel:dev": "parcel src/index.html -p 8123 --open",
-    "parcel:build": "parcel build src/index.html --public-url ./ --out-dir dist --no-source-maps --no-cache",
-    "clean": "rimraf dist .cache .cache-loader",
+    "parcel:dev": "parcel src/index.html -p 8123 --open 'Firefox Developer Edition'",
+    "parcel:build": "parcel build src/index.html --public-url ./ --dist-dir dist --no-source-maps --no-cache",
+    "clean": "rimraf dist .cache .cache-loader .parcel-cache",
+    "stylelint": "stylelint src/**/*.scss",
     "dev": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build",
+    "build": "npm-run-all clean stylelint parcel:build",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "repository": {
@@ -25,16 +26,13 @@
   },
   "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
   "devDependencies": {
-    "@babel/cli": "^7.11.6",
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
+    "autoprefixer": "^10.2.3",
     "npm-run-all": "^4.1.5",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-imagemin": "^4.0.1",
-    "postcss-clean": "^1.1.0",
+    "parcel": "^2.0.0-nightly.554",
     "postcss-preset-env": "^6.7.0",
-    "rimraf": "^2.7.1",
-    "sass": "^1.26.10"
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.5",
+    "sharp": "^0.27.1"
   },
   "dependencies": {}
 }
