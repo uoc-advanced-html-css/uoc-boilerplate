@@ -7,9 +7,8 @@
     "parcel:serve": "parcel serve src/index.html -p 8123 --open",
     "parcel:build": "parcel build src/index.html --public-url ./ --dist-dir dist --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
-    "stylelint": "stylelint src/**/*.scss",
     "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean stylelint parcel:build",
+    "build": "npm-run-all clean parcel:build",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "repository": {
