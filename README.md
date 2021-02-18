@@ -36,7 +36,7 @@ Using the Terminal, navigate to the project folder and run `npm install`.
 
 ### Images
 
-* Image transformation with [`@parcel/transformer-image`](https://v2.parceljs.org/recipes/image/) (based on [`sharp`](https://sharp.pixelplumbing.com/)).
+* Image transformation with [`@parcel/transformer-image`](https://v2.parceljs.org/recipes/image/) (based on [`sharp`](https://sharp.pixelplumbing.com/)). Do not use on this version since it may cause crashes on Netlify deployments.
 
 ### Development
 
