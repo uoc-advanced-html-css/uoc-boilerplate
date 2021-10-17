@@ -34,7 +34,7 @@ body {
   height: auto;
 
   @media (min-width: $mqMinWidth) {
-    max-width: 350px;
+    max-width: none;
   }
 }
 
