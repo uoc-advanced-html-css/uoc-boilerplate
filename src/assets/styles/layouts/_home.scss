@@ -4,6 +4,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   margin: 0;
   padding: 2rem;
@@ -47,4 +48,10 @@ body {
   @media (min-width: $mqMinWidth) {
     font-size: 36px;
   }
+}
+
+.uoc-footer {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  text-align: center;
 }

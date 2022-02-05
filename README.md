@@ -22,10 +22,16 @@ Using the Terminal, navigate to the project folder and run `npm install`.
 ### Stylesheets
 
 - [Sass/SCSS](https://sass-lang.com) to CSS compilation.
+- Minification and optimization of CSS files on production builds with [`cssnano`](https://github.com/cssnano/cssnano) (`@parcel/optimizer-cssnano`).
 - [PostCSS](https://postcss.org/) features:
   - Transpile modern CSS with [`postcss-preset-env`](https://preset-env.cssdb.org/features).
   - Automatically add CSS prefix to unsupported properties with [`autoprefixer`](https://autoprefixer.github.io/).
-  - Automatically minify and optimize CSS code on production build with `@parcel/optimizer-cssnano`.
+
+### HTML
+
+- Minification and optimization of CSS files on production builds [`htmlnano`](https://github.com/posthtml/htmlnano) (`@parcel/optimizer-htmlnano`).
+- [PostHTML](https://github.com/posthtml/posthtml) features:
+  - Include partial HTML files with [`posthtml-include`](https://github.com/posthtml/posthtml-include).
 
 ### Scripts
 
