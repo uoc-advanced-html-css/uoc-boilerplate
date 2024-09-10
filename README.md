@@ -6,7 +6,7 @@ This is the 3.x version of UOC Boilerplate, available since the UOC 2020-2 semes
 
 ## Requirements
 
-[Node.js](http://nodejs.org/) >= 14.15.x
+[Node.js](http://nodejs.org/) >= 18.x
 
 ## Getting started
 
@@ -35,7 +35,7 @@ Using the Terminal, navigate to the project folder and run `npm install`.
 
 ### Scripts
 
-- Allow for modern JavaScript (ES201x/ES8/ES7/ES6…) which is automatically transpiled to ES5 and minifed in production builds, with [Babel](https://babeljs.io/).
+- Allow for modern JavaScript (ES201x/ES8/ES7/ES6…) which is automatically transpiled (for the older browsers set in the `package.json`) and minifed in production builds, with [Babel](https://babeljs.io/).
 
 ### Images
 
