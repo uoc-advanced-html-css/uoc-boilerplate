@@ -21,25 +21,24 @@ Using the Terminal, navigate to the project folder and run `npm install`.
 
 ### Stylesheets
 
-- [Sass/SCSS](https://sass-lang.com) to CSS compilation.
-- Minification and optimization of CSS files on production builds with [`cssnano`](https://github.com/cssnano/cssnano) (`@parcel/optimizer-cssnano`).
-- [PostCSS](https://postcss.org/) features:
-  - Transpile modern CSS with [`postcss-preset-env`](https://preset-env.cssdb.org/features).
-  - Automatically add CSS prefix to unsupported properties with [`autoprefixer`](https://autoprefixer.github.io/).
+- [Sass/SCSS](https://sass-lang.com) to CSS compilation (`@parcel/transformer-sass`).
+- Transpilation of modern CSS synthax to support older bvrowsers, based on `browserslist`, including vendor prefixing and synthax lowering, with [PostCSS](https://postcss.org/) (`@parcel/transformer-postcss`).
+- Minification and optimization of CSS files on production builds with [`lightningcss`](https://github.com/parcel-bundler/lightningcss) (`@parcel/optimizer-css`).
 
 ### HTML
 
 - Minification and optimization of CSS files on production builds [`htmlnano`](https://github.com/posthtml/htmlnano) (`@parcel/optimizer-htmlnano`).
-- [PostHTML](https://github.com/posthtml/posthtml) features:
+- [PostHTML](https://github.com/posthtml/posthtml) (`@parcel/transformer-posthtml`) features:
   - Include partial HTML files with [`posthtml-include`](https://github.com/posthtml/posthtml-include).
 
 ### Scripts
 
-- Allow for modern JavaScript (ES201x/ES8/ES7/ES6…) which is automatically transpiled (for the older browsers set in the `package.json`) and minifed in production builds, with [Babel](https://babeljs.io/).
+- Transpilation of modern JavaScript synthax to support older browsers, based on `browserslist`, with with [Babel](https://babeljs.io/) (`@parcel/transformer-babel`).
+- Minification and optimization of JS code with [SWC](https://swc.rs/) (`@parcel/optimizer-swc`).
 
 ### Images
 
-- Image transformation with [`@parcel/transformer-image`](https://parceljs.org/recipes/image/) (based on [`sharp`](https://sharp.pixelplumbing.com/)).
+- Image transformation with [`sharp`](https://sharp.pixelplumbing.com/) ([`@parcel/transformer-image`](https://parceljs.org/recipes/image/)).
 
 ### Development
 
